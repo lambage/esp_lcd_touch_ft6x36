@@ -37,6 +37,7 @@ static const char *TAG = "FT6x36";
 #define FT62XX_REG_VENDID 0xA8      // FocalTech's panel ID
 
 #define FT62XX_VENDID 0x11  // FocalTech's panel ID
+#define FT6336_VENDID 0x88  // FocalTech's panel ID
 #define FT6206_CHIPID 0x06  // Chip selecting
 #define FT3236_CHIPID 0x33  // Chip selecting
 #define FT6236_CHIPID 0x36  // Chip selecting
@@ -296,7 +297,7 @@ static esp_err_t touch_ft6x36_init(esp_lcd_touch_handle_t tp)
     }
 
     /* Check if the values are valid */
-    if (vend_id != FT62XX_VENDID)
+    if (vend_id != FT62XX_VENDID && vend_id != FT6336_VENDID)
     {
         ESP_LOGE(TAG, "Invalid vendor ID: 0x%02X", vend_id);
         return ESP_FAIL;
