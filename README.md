@@ -1,8 +1,8 @@
 # ESP LCD Touch FT6x36 Controller
 
-[![Component Registry](https://components.espressif.com/components/espressif/esp_lcd_touch_ft6x36/badge.svg)](https://components.espressif.com/components/cfscn/esp_lcd_touch_ft6x36)
+[![Component Registry](https://components.espressif.com/components/espressif/esp_lcd_touch_ft6x36/badge.svg)](https://components.espressif.com/components/lambage/esp_lcd_touch_ft6x36)
 
-This repository is forked from espressif/esp_lcd_touch_ft5x06
+This repository is forked from https://github.com/cfscn/esp_lcd_touch_ft6x36
 
 Implementation of the FT6x36 touch controller with esp_lcd_touch component.
 
